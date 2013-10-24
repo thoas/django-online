@@ -20,10 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'online',
     'online.tests',
-    'django_nose',
 ]
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 ROOT_URLCONF = 'online.tests.urls'
 
@@ -38,3 +35,5 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'online.middleware.OnlineMiddleware',
 )
+
+SECRET_KEY = 'blabla'

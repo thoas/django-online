@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.utils import importlib
 
-from online import settings
+from . import settings
 
 
 def get_online(backend):

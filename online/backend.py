@@ -1,7 +1,7 @@
-from django.contrib.auth.models import User
 from django.core.cache import cache
 
-from online import settings
+from . import settings
+from .compat import User
 
 
 class OnlineBackend(object):
