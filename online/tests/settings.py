@@ -1,3 +1,5 @@
+import django
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -37,3 +39,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 SECRET_KEY = 'blabla'
+
+if django.VERSION <= (1, 6):
+    TEST_RUNNER = 'discover_runner.DiscoverRunner'
